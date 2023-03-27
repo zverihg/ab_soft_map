@@ -1,0 +1,56 @@
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 100, in recursive
+    cur.execute(f'''INSERT INTO tre_tbl (itm, parent) VALUES ('', '{url}');''')
+
+unrecognized token: "'\'');"
+
+
+\'
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 115, in recursive
+    cur.execute(f'''INSERT INTO tre_tbl (itm, parent) VALUES ('', '{lnk[-2]}');''')
+
+unrecognized token: "'\'');"
+
+
+/links/whitespace_in_links
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 94, in recursive
+    res = requests.get( self.url_rot + url, timeout = 60 )
+
+Exceeded 30 redirects.
+
+
+/redirects/infinite_redirect
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 94, in recursive
+    res = requests.get( self.url_rot + url, timeout = 60 )
+
+Exceeded 30 redirects.
+
+
+/redirects/two_step_redirect_loop_1
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 112, in recursive
+    cur.execute(f'''INSERT INTO tre_tbl (itm, parent) VALUES ('{itm}', '{lnk[-2]}');''')
+
+near "?": syntax error
+
+
+/users/signup?ssrc=product_home
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 94, in recursive
+    res = requests.get( self.url_rot + url, timeout = 60 )
+
+HTTPConnectionPool(host='crawler-test.com', port=80): Read timed out. (read timeout=60)
+
+
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 94, in recursive
+    res = requests.get( self.url_rot + url, timeout = 60 )
+
+HTTPConnectionPool(host='crawler-test.com', port=80): Read timed out. (read timeout=60)
+
+
+/status_codes/status_100
+/status_codes/status_102
+  File "C:\Users\morzb\Desktop\ab_soft_tst\1_tst.py", line 94, in recursive
+    res = requests.get( self.url_rot + url, timeout = 60 )
+
+HTTPConnectionPool(host='crawler-test.com', port=80): Read timed out. (read timeout=60)
+
+
+/status_codes/status_101
